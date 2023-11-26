@@ -40,6 +40,10 @@ if (window.location.pathname == "/index.html") {
     let accessToken = Array.from(array, (b) =>
       b.toString(16).padStart(2, "0")
     ).join("");
+
+    //b.toString(16)-> changes each number in the array into a string with base 16(a-f and 0-9);
+    //.padStart(2, "0")-> adds a zero at the start of the number if it is a single digit
+    //join("")-> Converts the array into a concatenated string
     console.log(accessToken);
 
     let user = {
